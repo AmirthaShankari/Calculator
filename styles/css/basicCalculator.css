@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box; }
+
+* {
+  font-family: "Open Sans"; }
+
+body {
+  background-color: #130B1E;
+  color: #6cacc5; }
+
+.basic-calc-wrapper {
+  width: 100%;
+  height: auto; }
+  .basic-calc-wrapper .basic-calculator {
+    width: 500px;
+    padding: 100px 0px;
+    margin: 0 auto; }
+    .basic-calc-wrapper .basic-calculator h1 {
+      text-align: center;
+      font-weight: 400; }
+    .basic-calc-wrapper .basic-calculator .calc-display {
+      width: 100%;
+      padding: 20px 0;
+      background: #130B1E;
+      color: #8c5059;
+      font-size: 30px;
+      text-align: right; }
+    .basic-calc-wrapper .basic-calculator .calc-input-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px 0 0 -10px; }
+    .basic-calc-wrapper .basic-calculator button:focus, .basic-calc-wrapper .basic-calculator input:focus {
+      outline: none; }
+    .basic-calc-wrapper .basic-calculator .calc-input, .basic-calc-wrapper .basic-calculator .calc-operator, .basic-calc-wrapper .basic-calculator #calc-equal, .basic-calc-wrapper .basic-calculator .calc-cancel, .basic-calc-wrapper .basic-calculator .calc-math-operator {
+      width: calc(100% * (1/4) - 10px);
+      padding: 20px;
+      margin: 10px 0 0 10px;
+      flex-grow: 1;
+      cursor: pointer;
+      background: #1f1942;
+      color: #6cacc5;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 100;
+      -webkit-user-select: none;
+      /* Chrome/Safari */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* IE10+ */ }
+    .basic-calc-wrapper .basic-calculator .calc-cancel, .basic-calc-wrapper .basic-calculator #calc-equal {
+      color: #926f06; }
+    .basic-calc-wrapper .basic-calculator .calc-input:hover, .basic-calc-wrapper .basic-calculator .calc-operator:hover, .basic-calc-wrapper .basic-calculator #calc-equal:hover, .basic-calc-wrapper .basic-calculator .calc-cancel:hover {
+      background: #2e255f; }
+    .basic-calc-wrapper .basic-calculator .calc-operator, .basic-calc-wrapper .basic-calculator .calc-math-operator {
+      color: #8c5059; }
+    .basic-calc-wrapper .basic-calculator .calc-button-highlight {
+      background: #2e255f !important; }
+
+/*# sourceMappingURL=basicCalculator.css.map */

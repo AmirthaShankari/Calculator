@@ -1,0 +1,9 @@
+//BEGIN :: Setting the fontstack
+*{
+    font-family : $fontStack;
+}
+//END :: Setting the fontstack
+
+body{
+    @include setTheme($colorDarkBlueBlack , $colorLightBlue);
+}

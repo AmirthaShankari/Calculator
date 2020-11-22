@@ -1,0 +1,65 @@
+//BEGIN :: Import of partials and commons
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'commons';
+//END :: Import of Partials and commons
+
+//BEGIN :: Basic Calculator Styling
+.basic-calc-wrapper{
+    width : 100%;
+    height : auto;
+    .basic-calculator{
+        width : 500px;
+        padding : 100px 0px;
+        margin : 0 auto;
+        h1{
+            text-align : center; 
+            font-weight : 400;
+        }
+        .calc-display{
+            width : 100%;
+            padding : 20px 0;
+            background : $colorDarkBlueBlack;
+            color : $colorBrown;
+            font-size : 30px;
+            text-align : right; 
+        }
+        .calc-input-wrapper{
+            display : flex;
+            flex-wrap : wrap;
+            margin : -10px 0 0 -10px; 
+        }
+        button:focus, input:focus{
+            outline: none;
+        }
+        .calc-input, .calc-operator, #calc-equal, .calc-cancel, .calc-math-operator{
+            width : calc(100% * (1/4) - 10px);
+            padding : 20px;
+            margin :10px 0 0 10px;
+            flex-grow: 1;
+            cursor: pointer;
+            background : $colorDarkBlue; 
+            color : $colorLightBlue;
+            text-align : center;
+            font-size : 24px;
+            font-weight : 100; 
+            -webkit-user-select: none; /* Chrome/Safari */        
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+ */
+        }
+        .calc-cancel, #calc-equal{
+            color : $colorYellow;
+        }
+        .calc-input:hover, .calc-operator:hover, #calc-equal:hover, .calc-cancel:hover{
+            background : $colorBlue;
+        }
+        .calc-operator, .calc-math-operator{
+            color : $colorBrown;
+        }
+        .calc-button-highlight{
+            background : $colorBlue !important;
+        }
+    }
+}
+//END :: Basic Calculator Styling

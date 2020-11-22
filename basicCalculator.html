@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Calculator</title>
+        <!-- BEGIN :: Include Stylesheet and Fonts -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700" />
+        <link rel = "stylesheet" href = "styles/css/basicCalculator.css">
+        <!-- END :: Include Stylesheet and Fonts-->
+    </head>
+    <body>
+        <!-- BEGIN :: Basic Calculator Wrapper -->
+        <div class = "basic-calc-wrapper">
+            <!-- BEGIN :: Basic Calculator -->
+            <div class = "basic-calculator">
+                <!-- BEGIN :: Calculator Heading -->
+                <h1>Basic Calculator</h1>
+                <!-- END :: Calculator Heading -->
+                <!-- BEGIN :: Calculator Display -->
+                <div>
+                    <input type = "text" class = "calc-display" value = "0"/>
+                </div>
+                <!-- END :: Calculator Display -->
+                <!-- BEGIN :: Calculator Input -->
+                <div class = "calc-input-wrapper">
+                    <button class = "calc-operator">sin</button>
+                    <button class = "calc-operator">cos</button>
+                    <button class = "calc-operator">tan</button>
+                    <button class = "calc-operator">sqrt</button>                    
+                    <button class = "calc-input">7</button>
+                    <button class = "calc-input">8</button>
+                    <button class = "calc-input">9</button>
+                    <button class = "calc-operator">/</button>
+                    <button class = "calc-input">4</button>
+                    <button class = "calc-input">5</button>
+                    <button class = "calc-input">6</button>
+                    <button class = "calc-operator">*</button>
+                    <button class = "calc-input">3</button>
+                    <button class = "calc-input">2</button>
+                    <button class = "calc-input">1</button>
+                    <button class = "calc-operator">-</button>
+                    <button class = "calc-cancel">C</buttonv>
+                    <button class = "calc-input">0</button>
+                    <button id = "calc-equal">=</button>
+                    <button class = "calc-operator">+</button>
+                </div>
+                <!-- END :: Calculator Input -->
+            </div>
+            <!-- END :: Basic Calculator -->
+        </div>
+        <!-- END :: Basic Calculator Wrapper -->
+        <!-- BEGIN :: Including the associated JavaScript -->
+        <script src = "js/calculatorConstants.js"></script>
+        <script src = "js/calculatorClosureLib.js"></script>
+        <!--<script src = "js/calculatorObjectLib.js"></script>-->
+        <script src = "js/basicCalculator.js"></script>
+        <!-- END :: Including the associated JavaScript -->
+    </body>
+</html>
